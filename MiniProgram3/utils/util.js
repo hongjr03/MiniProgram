@@ -2094,7 +2094,7 @@ var city_list_json =[
   {Location_ID:'101221005',Location_Name_EN:'yixian',Location_Name:'黟县'},
   {Location_ID:'101221006',Location_Name_EN:'shexian',Location_Name:'歙县'},
   {Location_ID:'101221007',Location_Name_EN:'xiuning',Location_Name:'休宁'},
-  {Location_ID:'101221008',Location_Name_EN:'huangshanfengjingqu',Location_Name:'黄山风景区(光明顶)'},
+  {Location_ID:'101221008',Location_Name_EN:'huangshanfengjingqu',Location_Name:'黄山风景区 (光明顶)'},
   {Location_ID:'101221009',Location_Name_EN:'huizhou',Location_Name:'徽州'},
   {Location_ID:'101221101',Location_Name_EN:'chuzhou',Location_Name:'滁州'},
   {Location_ID:'101221102',Location_Name_EN:'fengyang',Location_Name:'凤阳'},
@@ -3241,17 +3241,17 @@ var city_list_json =[
   {Location_ID:'101340406',Location_Name_EN:'yunlin',Location_Name:'云林'}
 ]
 
-// 查找城市ID
+// 查找城市 ID
 function getLocationID(location_name){
   // 遍历查找
   for(var i=0;i<city_list_json.length;i++){
     if(location_name.indexOf(city_list_json[i].Location_Name)!=-1){
-      // 返回当前位置ID
+      // 返回当前位置 ID
       return city_list_json[i].Location_ID
     }
   }
 
-  // 如果没有查到，则返回初始城市ID
+  // 如果没有查到，则返回初始城市 ID
   return '101010100'
 }
 

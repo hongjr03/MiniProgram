@@ -1,3 +1,5 @@
+const util = require("../../utils/util");
+
 Page({
   /**
    * 页面的初始数据
@@ -7,7 +9,9 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {},
+  onLoad: function (options) {
+    this.getWeather();
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -52,21 +56,29 @@ Page({
   //   });
   // },
 
-  getProfile: function (e) {
-    wx.getUserProfile({
-      desc: "展示用户信息",
-      success: (res) => {
-        console.log(res);
-        this.setData({
-          src: res.userInfo.avatarUrl,
-          name: res.userInfo.nickName,
-        });
-      },
-    });
+  data: {
+    region: ["浙江省", "杭州市", "钱塘区"]
   },
 
-  data: {
-    src: "/images/logo.jpg",
-    name: "Hello world!",
+  regionChange: function (e) {
+    this.setData({
+      region: e.detail.value
+    });
+    this.getWeather();
   },
+
+  getWeather: function () {
+    var that = this;
+    wx.request({
+      url: "https://devapi.qweather.com/v7/weather/now",
+      data: {
+        // location: that.data.region[1],
+        location: util.getLocationID(that.data.region[1]),
+        key: "3e916ed15fc14f83a3d66e6d4a237cb8"
+      },
+      success: function (res) {
+        console.log(res.data);
+      }
+    });
+  }
 });

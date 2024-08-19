@@ -1,7 +1,7 @@
 <view class="container">
     <!-- 1. 地区选择器 -->
-    <picker mode="region">
-        <view>北京市</view>
+    <picker mode="region" bindchange="regionChange">
+        <view>{{region}}</view>
     </picker>
     <!-- 2. 单行天气信息 -->
     <text>19℃ 晴</text>
