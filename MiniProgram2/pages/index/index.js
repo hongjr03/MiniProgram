@@ -72,7 +72,7 @@ Page({
   },
 
   data: {
-    src: 'images/logo.jpg',
+    src: '/images/logo.jpg',
     name: 'Hello world!',
   },
 })
