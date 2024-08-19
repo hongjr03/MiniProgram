@@ -9,7 +9,7 @@
 #let semester = "2024夏季"
 #let due_time = "2024年8月19日"
 #let id = "22070001035"
-#let source_code_link = "123"
+#let source_code_link = "https://github.com/hongjr03/MiniProgram"
 #let blog_link = "123"
 
 #show: assignment_class.with(title, author, course_id, instructor, semester, due_time, id, source_code_link, blog_link)
@@ -107,7 +107,7 @@
   + 清空 app.wxss 文件的内容；
   + 清空 app.js 文件的内容，然后自动补全 `App({})`。
 
-
+  以上部分修改记录见 #link("https://github.com/hongjr03/MiniProgram/commit/18a287fbfc5d4035c5b0de5895369ba8b6671052")[commit]。
 
 
 ]
