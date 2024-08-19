@@ -61,5 +61,18 @@ Page({
    */
   onShareAppMessage: function () {
     
-  }
+  },
+
+  getMyInfo: function(e) {
+    let info = e.detail.userInfo;
+    this.setData({
+      src: info.avatarUrl,
+      name: info.nickName,
+    });
+  },
+
+  data: {
+    src: 'images/logo.jpg',
+    name: 'Hello world!',
+  },
 })
