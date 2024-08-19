@@ -32,3 +32,11 @@ image {
   width: 33.3%;
   text-align: center;
 }
+
+.title-box {
+  width: 33.3%;
+  text-align: center;
+  
+  /* 设置粗体 */
+  font-weight: bold;
+}

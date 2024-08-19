@@ -4,30 +4,30 @@
         <view>{{region}}</view>
     </picker>
     <!-- 2. 单行天气信息 -->
-    <text>19℃ 晴</text>
+    <text>{{temp}}℃ {{weather}}</text>
     <!-- 3. 天气图标 -->
-    <image src="/images/weather_icon_s2/999.png" mode="widthFix"></image>
+    <image src="/images/weather_icon_s2/{{icon}}.png" mode="widthFix"></image>
     <!-- 4. 多行天气信息 -->
     <view class="detail">
         <view class="bar">
-            <view class="box">湿度</view>
-            <view class="box">气压</view>
-            <view class="box">能见度</view>
+            <view class="title-box">湿度</view>
+            <view class="title-box">气压</view>
+            <view class="title-box">能见度</view>
         </view>
         <view class="bar">
-            <view class="box">0 %</view>
-            <view class="box">0 hPa</view>
-            <view class="box">0 km</view>
+            <view class="box">{{humidity}}%</view>
+            <view class="box">{{pressure}}hPa</view>
+            <view class="box">{{visibility}}km</view>
         </view>
         <view class="bar">
-            <view class="box">风向</view>
-            <view class="box">风速</view>
-            <view class="box">风力</view>
+            <view class="title-box">风向</view>
+            <view class="title-box">风速</view>
+            <view class="title-box">风力</view>
         </view>
         <view class="bar">
-            <view class="box">0</view>
-            <view class="box">0 km/h</view>
-            <view class="box">0级</view>
+            <view class="box">{{windDir}}</view>
+            <view class="box">{{windSpeed}}m/s</view>
+            <view class="box">{{windScale}}级</view>
         </view>
     </view>
 </view>

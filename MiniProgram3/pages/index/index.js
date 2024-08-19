@@ -77,7 +77,18 @@ Page({
         key: "3e916ed15fc14f83a3d66e6d4a237cb8"
       },
       success: function (res) {
-        console.log(res.data);
+        // console.log(res.data);
+        that.setData({
+          temp: res.data.now.temp,
+          weather: res.data.now.text,
+          icon: res.data.now.icon,
+          humidity: res.data.now.humidity,
+          pressure: res.data.now.pressure,
+          visibility: res.data.now.vis,
+          windDir: res.data.now.windDir,
+          windSpeed: res.data.now.windSpeed,
+          windScale: res.data.now.windScale,
+        });
       }
     });
   }
