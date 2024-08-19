@@ -57,7 +57,16 @@ Page({
   // },
 
   data: {
-    region: ["浙江省", "杭州市", "钱塘区"]
+    region: ["浙江省", "杭州市", "钱塘区"],
+    temp: 0,
+    weather: "",
+    icon: 100,
+    humidity: 0,
+    pressure: 0,
+    visibility: 0,
+    windDir: "",
+    windSpeed: 0,
+    windScale: 0,
   },
 
   regionChange: function (e) {
