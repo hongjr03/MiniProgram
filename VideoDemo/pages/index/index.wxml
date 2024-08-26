@@ -9,8 +9,8 @@
 
 <!-- 区域 3：视频列表 -->
 <view class='videoList'>
-  <view class='videoBar'>
+  <view class='videoBar' wx:for='{{list}}' wx:key='video{{index}}'> <!-- wx:key 可以在循环中唯一标识每个元素 -->
     <image src='/images/play128.png' />
-    <text>这是一个测试标题</text>
+    <text>{{item.title}}</text>
   </view>
 </view>
