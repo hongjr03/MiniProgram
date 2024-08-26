@@ -2,3 +2,31 @@
 video {
   width: 100%;
 }
+
+/* 弹幕控制样式 */
+.danmuArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rpx;
+  gap: 10rpx;
+}
+
+input {
+  /* 圆角 */
+  border-radius: 16rpx;
+  border: 1rpx solid #987938;
+  flex-grow: 1;
+  height: 100rpx;
+  width: 100%;
+}
+
+button {
+  background-color: #987938;
+  color: white;
+  /* height: 100rpx; */
+  /* width: 100rpx; */
+  /* 居中对齐 */
+  align-items: center;
+  justify-content: center;
+}
