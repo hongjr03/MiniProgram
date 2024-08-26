@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@lspriv/wx-calendar": "^1.7.3-alpha.7"
+  }
+}

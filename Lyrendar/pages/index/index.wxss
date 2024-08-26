@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  /* margin-left: 20%; */
+  height: 100vh;
+  /* background-color: #f8f8f8; */
+}
+
+.head {
+  margin-left: 20%;
+}
+
+.title {
+  font-size: 68rpx;
+  font-weight: bold;
+  /* 设置边距 */
+  margin-top: 100rpx;
+  /* 设置最大宽度 */
+  max-width: 60%;
+  /* 左侧留白 */
+  /* margin-left: 1rpx; */
+  /* 靠左 */
+  text-align: left;
+  color: #07c160;
+}
+
+.search-result-container {
+  height: 300px; /* 或者其他适合你布局的固定高度 */
+  margin-left: 15%;
+  margin-right: 5%;
+  overflow-y: auto;
+}
+
+/* <view class="search-result">
+            <view wx:for="{{searchResult}}" wx:key="songmid" class="search-item" bindtap="onSelectSong">
+                <image class="album-cover" src="{{item.albumcover}}" mode="aspectFill" />
+                <view class="song-info">
+                    <text class="song-name">{{item.songname}}</text>
+                    <text class="singer">{{item.singer[0].name}}</text>
+                </view>
+            </view>
+        </view> */
+
+/* 
+------------------------
+| 专辑封面 | 歌曲名
+| 专辑封面 | 歌手名
+------------------------
+*/
+
+.search-item {
+  display: flex;
+  align-items: center;
+  padding: 16rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.album-cover {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 4rpx;
+  margin-right: 16rpx;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-name {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.singer {
+  font-size: 28rpx;
+  color: #666;
+}

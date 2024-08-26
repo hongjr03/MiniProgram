@@ -1,0 +1,17 @@
+<view class="profile-container">
+  <view class="user-info">
+    <image class="avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill"/>
+    <text class="nickname">{{userInfo.nickName}}</text>
+  </view>
+  
+  <view class="lyric-history">
+    <text class="history-title">我的歌词历史</text>
+    <lyric-card wx:for="{{lyricHistory}}" wx:key="id"
+      albumCover="{{item.albumCover}}"
+      songTitle="{{item.songTitle}}"
+      artist="{{item.artist}}"
+      lyric="{{item.lyric}}"
+      date="{{item.date}}"
+    />
+  </view>
+</view>

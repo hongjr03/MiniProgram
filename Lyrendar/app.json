@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/calendar/calendar",
+    "pages/timeline/timeline",
+    "pages/profile/profile",
+    "pages/edit/edit"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Lyrendar",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#333",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/calendar/calendar",
+        "iconPath": "images/icons/today.png",
+        "text": "日历"
+      },
+      {
+        "pagePath": "pages/timeline/timeline",
+        "iconPath": "images/icons/timeline.png",
+        "text": "时间流"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "images/icons/mood.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

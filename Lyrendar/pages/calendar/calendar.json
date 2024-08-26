@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "日历",
+    "usingComponents": {
+        "calendar": "@lspriv/wx-calendar"
+    },
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f8f8f8",
+    "backgroundTextStyle": "light"
+  }

@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="head">
+        <text class="title">
+            嗨！
+            你今天感觉
+            怎么样？
+        </text>
+        
+        <text class="subtitle">用歌词记录你的心情！</text>
+        <input class="lyric-input" placeholder="输入歌词" bindinput="onInputLyric" />
+    </view>
+    <!-- 固定高度的搜索结果容器 -->
+    <scroll-view scroll-y class="search-result-container">
+        <view class="search-result">
+            <view wx:for="{{searchResult}}" wx:key="songmid" class="search-item" bindtap="onSelectSong" data-song="{{item}}">
+                <image class="album-cover" src="{{item.albumcover}}" mode="aspectFill" />
+                <view class="song-info">
+                    <text class="song-name">{{item.songname}}</text>
+                    <text class="singer">{{item.singer[0].name}}</text>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

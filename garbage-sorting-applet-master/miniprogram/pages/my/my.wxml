@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+
+
+    <block wx:if="{{!hasUserInfo}}">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="https://bkimg.cdn.bcebos.com/pic/cefc1e178a82b9014a90e40fabc7be773912b31b41fe?x-bce-process=image/resize,m_lfit,w_268,limit_1/format,f_jpg" mode="cover"></image>
+      <button class="getUserProfile"  bindtap="getUserProfile"> 绑定头像 </button>
+      <!-- <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+
+
+
+
+
+</view>

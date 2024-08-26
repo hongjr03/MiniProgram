@@ -1,0 +1,4 @@
+<view class="calendar-container">
+  <calendar id="calendar" bindload="handleLoad" />
+  <!-- <text>日历页面</text> -->
+</view>

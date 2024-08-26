@@ -1,0 +1,9 @@
+<view class="timeline-container">
+  <lyric-card wx:for="{{timelineItems}}" wx:key="id"
+    albumCover="{{item.albumCover}}"
+    songTitle="{{item.songTitle}}"
+    artist="{{item.artist}}"
+    lyric="{{item.lyric}}"
+    date="{{item.date}}"
+  />
+</view>
