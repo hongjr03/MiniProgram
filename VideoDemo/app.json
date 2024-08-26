@@ -3,9 +3,8 @@
     "pages/index/index"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarTitleText": "口述校史",
+    "navigationBarBackgroundColor": "#987938"
   },
   "style": "v2",
   "componentFramework": "glass-easel",
