@@ -1,0 +1,2 @@
+<!-- 区域 1：视频播放器 -->
+ <video id = 'myVideo' controls autoplay></video>
