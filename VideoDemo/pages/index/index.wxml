@@ -1,15 +1,14 @@
 <!-- 区域 1：视频播放器 -->
-<video id='myVideo' controls autoplay></video>
-
+<video id='myVideo' src='{{src}}' controls autoplay></video>
 <!-- 区域 2：弹幕控制 -->
 <view class='danmuArea'>
   <input type='text' placeholder='请输入弹幕内容' bindinput='inputDanmu' />
   <button bindtap='sendDanmu'>发送弹幕</button>
 </view>
-
 <!-- 区域 3：视频列表 -->
 <view class='videoList'>
-  <view class='videoBar' wx:for='{{list}}' wx:key='video{{index}}'> <!-- wx:key 可以在循环中唯一标识每个元素 -->
+  <view class='videoBar' wx:for='{{list}}' wx:key='id' data-url='{{item.videoUrl}}' bindtap='playVideo'>
+    <!-- wx:key 可以在循环中唯一标识每个元素 -->
     <image src='/images/play128.png' />
     <text>{{item.title}}</text>
   </view>

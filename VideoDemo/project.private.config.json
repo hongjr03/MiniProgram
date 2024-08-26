@@ -3,5 +3,6 @@
   "projectname": "VideoDemo",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "3.5.4"
 }
