@@ -6,3 +6,11 @@
   <input type='text' placeholder='请输入弹幕内容' bindinput='inputDanmu' />
   <button bindtap='sendDanmu'>发送弹幕</button>
 </view>
+
+<!-- 区域 3：视频列表 -->
+<view class='videoList'>
+  <view class='videoBar'>
+    <image src='/images/play128.png' />
+    <text>这是一个测试标题</text>
+  </view>
+</view>

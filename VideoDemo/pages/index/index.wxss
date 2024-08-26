@@ -30,3 +30,30 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+/* 区域 3：视频列表样式 */
+.videoList {
+  width: 100%;
+  min-height: 400rpx;
+}
+
+.videoBar {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #987938;
+  margin: 10rpx;
+}
+
+image {
+  width: 70rpx;
+  height: 70rpx;
+  margin: 20rpx;
+}
+
+text {
+  font-size: 45rpx;
+  color: #987938;
+  margin: 20rpx;
+  flex-grow: 1;
+}
