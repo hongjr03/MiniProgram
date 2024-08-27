@@ -8,6 +8,8 @@ video {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
   padding: 10rpx;
   gap: 10rpx;
 }
@@ -16,19 +18,21 @@ input {
   /* 圆角 */
   border-radius: 16rpx;
   border: 1rpx solid #987938;
+  /* margin-left: 5rpx; */
   flex-grow: 1;
-  height: 100rpx;
+  height: 100%;
   width: 100%;
+  padding-left: 15rpx;
 }
 
 button {
+  border-radius: 16rpx;
   background-color: #987938;
   color: white;
-  /* height: 100rpx; */
+  height: 100%;
   /* width: 100rpx; */
   /* 居中对齐 */
-  align-items: center;
-  justify-content: center;
+  margin: auto;
 }
 
 /* 区域 3：视频列表样式 */
