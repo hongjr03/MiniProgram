@@ -1,5 +1,5 @@
 <!-- 区域 1：视频播放器 -->
-<video id='myVideo' src='{{src}}' controls autoplay></video>
+<video id='myVideo' src='{{src}}' controls></video>
 <!-- 区域 2：弹幕控制 -->
 <view class='danmuArea'>
   <input type='text' placeholder='请输入弹幕内容' bindinput='inputDanmu' />
