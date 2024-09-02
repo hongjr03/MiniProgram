@@ -1,0 +1,47 @@
+/*新闻列表区域样式*/
+/*2-1新闻列表容器*/
+#news-list {
+    min-height: 600rpx;
+    padding: 15rpx;
+  }
+  /*2-2列表项目*/
+  .list-item {
+    /* display: flex;
+    flex-direction: row;
+    border-bottom: 1rpx solid gray; */
+    /* 固定左边图片宽度 */
+    display: grid;
+    grid-template-columns: 230rpx auto;
+    padding: 10rpx;
+    border-bottom: 1rpx solid gray;
+  }
+  /*2-3新闻图片*/
+  .list-item image {
+    width: 230rpx;
+    height: 150rpx;
+    /* margin-right: 10rpx; */
+  }
+  
+  /* <view class='news-title' bindtap='goToDetail' data-id='{{news.id}}'>
+        <text class='title'>{{news.title}}</text>
+        <text class='date'>{{news.add_date}}</text>
+      </view> */
+  
+  /*2-4新闻标题*/
+  .list-item text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10rpx;
+    width: 100%;
+  }
+  .list-item text.title {
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+  }
+  .list-item text.date {
+    font-size: 8pt;
+    color: gray;
+  }
+  

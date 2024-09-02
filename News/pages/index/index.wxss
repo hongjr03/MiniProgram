@@ -1,0 +1,11 @@
+.swiper-container {
+  width: 100%;
+  height: 400rpx; /* 你可以根据需要调整高度 */
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 这会保持图片的宽高比，同时填满整个容器 */
+}
+

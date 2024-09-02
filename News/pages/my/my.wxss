@@ -1,0 +1,24 @@
+/* pages/my/my.wxss */
+#myLogin {
+  background-color: #328eeb;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#myIcon {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+#nickName {
+  color: white;
+}
+
+#myFavorites {
+  padding: 20rpx;
+}
+
