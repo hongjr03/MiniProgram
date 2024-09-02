@@ -5,10 +5,11 @@
             你今天感觉
             怎么样？
         </text>
-        
         <text class="subtitle">用歌词记录你的心情！</text>
-        <input class="lyric-input" placeholder="输入歌词" bindinput="onInputLyric" />
+        
+        <!-- <fui-input isFillet=true placeholder="输入歌词" bindinput="onInputLyric" /> -->
     </view>
+    <fui-textarea textareaBorder="true" radius="16rpx" borderColor="#000000" placeholder="请输入歌词" bind:input="onInputLyric"/>
     <!-- 固定高度的搜索结果容器 -->
     <scroll-view scroll-y class="search-result-container">
         <view class="search-result">

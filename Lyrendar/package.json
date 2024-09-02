@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@lspriv/wx-calendar": "^1.7.3-alpha.7"
+    "@lspriv/wx-calendar": "^1.7.3-alpha.7",
+    "@vant/weapp": "^1.11.6"
   }
 }

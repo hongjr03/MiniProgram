@@ -6,6 +6,10 @@
     "pages/profile/profile",
     "pages/edit/edit"
   ],
+  "usingComponents": {
+    "fui-input": "components/firstui/fui-input/fui-input",
+    "fui-textarea":"components/firstui/fui-textarea/fui-textarea"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

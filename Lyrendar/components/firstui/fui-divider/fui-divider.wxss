@@ -1,0 +1,34 @@
+.fui-divider__wrap {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fui-divider__line {
+  height: 1px;
+  -webkit-transform: scaleY(0.5) translateZ(0);
+  transform: scaleY(0.5) translateZ(0);
+  flex: 1;
+}
+
+.fui-divider__text-box {
+  position: relative;
+  text-align: center;
+  padding: 0 8rpx;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.fui-divider__text {
+  padding: 0 10rpx;
+}

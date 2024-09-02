@@ -1,38 +1,43 @@
 .lyric-card {
-    background: #fff;
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .album-cover {
-    width: 100%;
-    height: 200px;
-    border-radius: 4px;
-  }
-  
-  .lyric-content {
-    margin-top: 12px;
-  }
-  
-  .song-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .artist {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .lyric {
-    font-size: 16px;
-    margin-top: 8px;
-  }
-  
-  .date {
-    font-size: 12px;
-    color: #999;
-    margin-top: 8px;
-  }
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.album-cover {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.lyric-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.artist {
+  font-size: 14px;
+  color: #666;
+}
+
+.lyric {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.date {
+  font-size: 12px;
+  color: #999;
+  margin-top: 8px;
+}

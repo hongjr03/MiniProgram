@@ -29,6 +29,7 @@ App({
   },
 
   globalData: {
-    songInfo: null
+    songInfo: null,
+    lyric: null
   }
 })

@@ -1,9 +1,11 @@
 <view class="lyric-card">
-  <image class="album-cover" src="{{albumCover}}" mode="aspectFill"/>
+  <image class="album-cover" src="{{albumCover}}" mode="aspectFill" />
   <view class="lyric-content">
-    <text class="song-title">{{songTitle}}</text>
-    <text class="artist">{{artist}}</text>
+    <view class="title-artist">
+      <text class="song-title">{{songTitle}}</text>
+      <text class="artist">{{artist}}</text>
+    </view>
     <text class="lyric">{{lyric}}</text>
+    <text class="date">{{date}}</text>
   </view>
-  <text class="date">{{date}}</text>
 </view>

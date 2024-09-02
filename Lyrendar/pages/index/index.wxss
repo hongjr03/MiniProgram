@@ -3,13 +3,18 @@
   flex-direction: column;
   align-items: left;
   justify-content: space-around;
-  /* margin-left: 20%; */
+  margin-left: 10%;
+  margin-right: 10%;
   height: 100vh;
   /* background-color: #f8f8f8; */
 }
 
 .head {
-  margin-left: 20%;
+  /* display: flex;
+  flex-direction: column; */
+  align-items: left;
+  justify-content: space-around;
+  height: 35vh;
 }
 
 .title {
@@ -26,10 +31,28 @@
   color: #07c160;
 }
 
+.subtitle {
+  font-size: 38rpx;
+  font-weight: light;
+  /* 设置边距 */
+  /* 设置最大宽度 */
+  /* max-width: 60%; */
+  /* 左侧留白 */
+  /* margin-left: 1rpx; */
+  /* 靠左 */
+  text-align: left;
+}
+
+fui-textarea {
+  width: 80%;
+}
+
+
 .search-result-container {
-  height: 300px; /* 或者其他适合你布局的固定高度 */
-  margin-left: 15%;
-  margin-right: 5%;
+  margin-top: 15rpx;
+  height: 50vh;
+  /* margin-left: 15%; */
+  /* margin-right: 5%; */
   overflow-y: auto;
 }
 

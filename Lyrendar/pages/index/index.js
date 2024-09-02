@@ -1,6 +1,6 @@
 Page({
   data: {
-    lyricInput: '',
+    lyricInput: "",
     searchResult: null,
   },
 
@@ -13,9 +13,9 @@ Page({
   },
 
   onInputLyric(e) {
-    // 让该模块支持输入换行
+    console.log(e)
     this.setData({
-      lyricInput: e.detail.value
+      lyricInput: e.detail
     });
     // 一边输入一边搜索
     this.searchLyric();
@@ -59,6 +59,7 @@ Page({
     // 跳转到歌曲详情页
     const app = getApp();
     app.globalData.songInfo = song;
+    app.globalData.lyric = this.data.lyricInput;
     wx.navigateTo({
       url: '/pages/edit/edit'
     });
