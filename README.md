@@ -11,4 +11,4 @@
 - 第三节包含一个小程序[garbage-sorting-applet-master](./garbage-sorting-applet-master)
 - 第四节包含一个小程序[VideoDemo](./VideoDemo)
 
-实验报告在博客中可见，[jrhim.com](https://www.jrhim.com)。
+实验报告在[Docs by JrHimself](https://docs.jrhim.com)中可见。
